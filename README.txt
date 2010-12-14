@@ -29,7 +29,7 @@ makeauth <admin>, <secret>, <hostname>
         5. Add shared secrets to other organizations that contain administrators who will submit EZCommands. With EZCommand, the shared secret must be set for each organization; the shared secrets are not inherited down the organization hierarchy.
     
     Example usage:
-        perl ezcommand.pl makeauth jeff@jumboinc.com dontsharethis ac-s8.postini.com
+        perl ezcommand.pl makeauth jeff@jumboinc.com, dontsharethis, ac-s8.postini.com
         Success. Credentials stored for jeff@jumboinc.com under system ac-s8.postini.com.
         AuthString is 6cgfDIRRzWusboAENaOVimaPz1MBBLAjeff@jumboinc.com
         Note that this does not mean EZCommand Shell has successfully authenticated to Postini.
@@ -119,8 +119,8 @@ modifyuser <user address> [, additional parameters]
         Provided you have made the authstring, this adds a user to Postini. For more information, see the Email Security Batch Reference Guide (a URL is provided at the bottom of this file).
 
     Example usage;
-        perl ezcommand.pl adduser jim@jumboinc.com, approved_senders=+hugeisp.com, welcome=1
-        Success. Created new user jim@jumboinc.com in organization jumboinc-com.
+        perl ezcommand.pl modifyuser jim@jumboinc.com, password=NewP*ssw0rd
+        Success. Modified jim@jumboinc.com:  Set PASSWD to X.
 
 
 deleteuser <user address> [, additional parameters]
