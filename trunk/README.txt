@@ -31,7 +31,7 @@ makeauth <admin>, <secret>, <hostname>
     Example usage:
         perl ezcommand.pl makeauth jeff@jumboinc.com dontsharethis ac-s8.postini.com
         Success. Credentials stored for jeff@jumboinc.com under system ac-s8.postini.com.
-        AuthString is 6cgfVIRRzWuUboAENaOVimaPz1MBBLYjeff@jumboinc.com
+        AuthString is 6cgfDIRRzWusboAENaOVimaPz1MBBLAjeff@jumboinc.com
         Note that this does not mean EZCommand Shell has successfully authenticated to Postini.
 
 
@@ -94,7 +94,7 @@ info
         perl ezcommand.pl info
         EZCommand Shell version 1.0.0
         Credentials stored for jeff@jumboinc.com under system ac-s8.postini.com.
-        AuthString is e+DdtTKJ2eRTA46xOl/a0ue9grcIRXXjeff@jumboinc.com
+        AuthString is 6cgfDIRRzWusboAENaOVimaPz1MBBLAjeff@jumboinc.com
 
 
 adduser <user address> [, additional parameters]
